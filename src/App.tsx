@@ -29,7 +29,7 @@ const App = () => {
         todos.map((todo, index) => (
           <div style={{ marginBottom: "10px" }} key={todo.id}>
             <button onClick={() => onDeleteHandler(todo)}>
-              {++index}
+              {todo.id}
             </button>
             {todo.title}
           </div>
